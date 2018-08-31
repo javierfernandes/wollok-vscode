@@ -1,0 +1,26 @@
+{
+    "name": "wollok-vscode",
+    "displayName": "wollok-vscode",
+    "description": "Wollok Programming Language Extension for VSCode",
+    "version": "0.0.1",
+    "publisher": "jfernandes",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "wollok",
+            "aliases": ["Wollok", "wollok"],
+            "extensions": [".wlk",".wprogram",".wtest"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "wollok",
+            "scopeName": "source.wollok",
+            "path": "./syntaxes/wollok.tmLanguage"
+        }]
+    }
+}
